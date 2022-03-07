@@ -1,4 +1,5 @@
 div {
-  color: red;
-  font-size: 100px;
+  width: 200px;
+  height: 200px;
+  background: url("../images/favicon.png");
 }
