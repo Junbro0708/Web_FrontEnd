@@ -1,0 +1,17 @@
+p{
+  color: red;
+}
+span{
+  color: black;
+  background-color: orange;
+}
+table{
+
+}
+tr{
+
+}
+td{
+  border: 1px solid rebeccapurple;
+  padding: 10px;
+}
