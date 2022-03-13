@@ -1,7 +1,7 @@
 @import url("./box.css");
 
 div{
-  font-size: 50px;
+  font-size: 20px;
   text-decoration: underline;
 }
 .box{
@@ -20,10 +20,28 @@ div{
 .box:focus{
   height: 300px;
 }
-input{
+/* input{
   background-color: rosybrown;
   transition: 1s;
 }
 input:focus{
   background-color: orange;
+} */
+.jun{
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+}
+.jun::before{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: royalblue;
+}
+[type="password"] {
+  background-color: orange;
+}
+[data-fruit-name]{
+  color: red;
 }
