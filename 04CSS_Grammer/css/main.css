@@ -1,0 +1,29 @@
+@import url("./box.css");
+
+div{
+  font-size: 50px;
+  text-decoration: underline;
+}
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transition: 1s;
+}
+.box:hover{
+  width: 300px;
+  background-color: royalblue;
+}
+.box:active{
+  width: 500px;
+}
+.box:focus{
+  height: 300px;
+}
+input{
+  background-color: rosybrown;
+  transition: 1s;
+}
+input:focus{
+  background-color: orange;
+}
