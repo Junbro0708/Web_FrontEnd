@@ -9,7 +9,7 @@
   background-color: orange;
 }
 .container{
-
+  background-color: black;
 }
 .container .item{
   width: 100px;
@@ -20,4 +20,41 @@
 }
 .container .item:first-child{
   padding: 20px;
+}
+.con .item{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  margin-bottom: 10px;
+}
+.con .item:first-child{
+  border: 4px solid red;
+  /* border-radius: 10px; */
+  padding: 10px;
+  box-sizing: border-box;
+}
+.jun{
+  width: 200px;
+  height: 150px;
+  background-color: royalblue;
+  margin: 20px;
+  overflow: scroll;
+}
+.bro{
+  margin-left: 20px;
+  width: 300px;
+  height: 100px;
+  background-color: orange;
+}
+body{
+  margin: 20px;
+}
+span{
+  display: block;
+  width: 120px;
+  height: 30px;
+  background: royalblue;
+  color: white;
+  text-align: center;
+  opacity: 0.5;
 }
