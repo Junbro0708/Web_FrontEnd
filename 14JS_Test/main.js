@@ -28,3 +28,17 @@ const junbro = {
 const hisName = junbro.getName();
 console.log(hisName);
 console.log(junbro.getName());
+
+// -------------------------------- DOM API
+
+// const boxEls = document.querySelectorAll('.box');
+
+// boxEls.forEach(function (boxEl, index) {
+//   boxEl.classList.add(`order-${index+1}`);
+//   console.log(index, boxEl);
+// });
+
+const boxEl = document.querySelector('.box');
+console.log(boxEl.textContent);
+boxEl.textContent = 'JUNBRO';
+console.log(boxEl.textContent);
