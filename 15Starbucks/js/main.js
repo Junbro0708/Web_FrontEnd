@@ -34,3 +34,11 @@ window.addEventListener('scroll', _.throttle(function(){
   }
 }, 300));
 // ._thorottle(함수, 몇 초에 한번 실행되는지 300은 0.3초)
+
+const fadeEls = document.querySelectorAll('.visual .fade-in');
+fadeEls.forEach(function(fadeEl, index){
+  gsap.to(fadeEl, 1, {
+    delay: (index + 1) * .7,
+    opacity: 1
+  });
+});
