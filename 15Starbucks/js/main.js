@@ -42,3 +42,10 @@ fadeEls.forEach(function(fadeEl, index){
     opacity: 1
   });
 });
+
+// SWIPER
+new Swiper('.notice-line .swiper', {
+  direction: 'vertical',
+  autoplay: true,
+  loop: true
+});
