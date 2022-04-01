@@ -1,0 +1,37 @@
+/* 파일 전체에 영향을 주는 스타일 */
+*{
+  font-family: 'Nanum Gothic', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+body{
+  background-color: whitesmoke;
+}
+
+@keyframes fadein{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes fadeout{
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@-webkit-keyframes fadein{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@-webkit-keyframes fadeout{
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+.fade-in{
+  animation: fadein;
+  animation-duration: 0.5s;
+}
+.fade-out{
+  animation: fadeout;
+  animation-duration: 0.5s;
+}

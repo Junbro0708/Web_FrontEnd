@@ -1,5 +1,44 @@
-section .canvas{
-  width: 300px;
-  height: 300px;
-  background-color: orange;
+/* main화면에 영향을 주는 스타일 */
+#main{
+  background-color: #FFF;
+  width: 80%;
+  text-align: center;
+  border-radius: 20px;
+}
+#main .canvas{
+  width: 80%;
+  background-color: #F1F1F1;
+}
+#main .canvas::after{
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+#main .text-group .title{
+  font-size: 24px;
+  font-weight: 700;
+  padding: 5vh;
+}
+#main .text-group .description{
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 0 20px;
+  line-height: 1.4;
+}
+#main .main-btn{
+  display: block;
+  width: 20%;
+  padding: 8px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: #333;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  transition: .4s;
+  margin: 2vh auto;
+}
+#main .main-btn:hover{
+  background-color: #333;
+  color: #FFF;
 }
