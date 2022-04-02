@@ -1,3 +1,40 @@
 #result{
   display: none;
 }
+#result .canvas{
+  width: 80%;
+  background-color: #F1F1F1;
+}
+#result .canvas::after{
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+#result .text-group .title{
+  font-size: 24px;
+  font-weight: 700;
+  padding: 5vh;
+}
+#result .text-group .description{
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 0 20px;
+  line-height: 1.4;
+}
+#result .main-btn{
+  display: block;
+  width: 20%;
+  padding: 8px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: #333;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  transition: .4s;
+  margin: 2vh auto;
+}
+#result .main-btn:hover{
+  background-color: #333;
+  color: #FFF;
+}

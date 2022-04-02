@@ -1,12 +1,12 @@
 /* main화면에 영향을 주는 스타일 */
 #main{
   background-color: #FFF;
-  width: 80%;
+  width: 90%;
   text-align: center;
   border-radius: 20px;
 }
 #main .canvas{
-  width: 80%;
+  width: 95%;
   background-color: #F1F1F1;
 }
 #main .canvas::after{
@@ -27,7 +27,7 @@
 }
 #main .main-btn{
   display: block;
-  width: 20%;
+  width: 30%;
   padding: 8px;
   border: 1px solid #333;
   border-radius: 5px;
