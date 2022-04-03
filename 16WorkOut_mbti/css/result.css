@@ -1,5 +1,9 @@
 #result{
   display: none;
+  background-color: #FFF;
+  width: 90%;
+  text-align: center;
+  border-radius: 20px;
 }
 #result .canvas{
   width: 80%;
