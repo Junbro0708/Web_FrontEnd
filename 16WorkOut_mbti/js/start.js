@@ -1,6 +1,7 @@
 const mainEl = document.querySelector("#main");
 const qnaEl = document.querySelector("#qna");
 const resultEl = document.querySelector("#result");
+const statusFadeEl = document.querySelector('.status');
 const endPoint = qnaList.length;
 const select = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 

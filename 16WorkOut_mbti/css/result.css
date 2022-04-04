@@ -6,7 +6,7 @@
   border-radius: 20px;
 }
 #result .canvas{
-  width: 80%;
+  width: 95%;
   background-color: #F1F1F1;
 }
 #result .canvas::after{
@@ -14,20 +14,26 @@
   display: block;
   padding-bottom: 100%;
 }
-#result .text-group .title{
+#result .title{
   font-size: 24px;
   font-weight: 700;
-  padding: 5vh;
+  padding-bottom: 5vh;
 }
-#result .text-group .description{
+#result .text-group .result-name{
   font-size: 16px;
-  font-weight: 400;
-  padding: 0 0 20px;
+  font-weight: 700;
+  padding: 20px 10px 10px 0;
   line-height: 1.4;
 }
-#result .main-btn{
+#result .text-group .result-description{
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px;
+  line-height: 1.4;
+}
+#result .result-btn{
   display: block;
-  width: 20%;
+  width: 30%;
   padding: 8px;
   border: 1px solid #333;
   border-radius: 5px;
@@ -38,7 +44,7 @@
   transition: .4s;
   margin: 2vh auto;
 }
-#result .main-btn:hover{
+#result .result-btn:hover{
   background-color: #333;
   color: #FFF;
 }

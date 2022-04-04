@@ -1,6 +1,16 @@
 #qna{
   display: none;
 }
+#qna .canvas{
+  width: 80%;
+  background-color: #FFF;
+  margin-top: 5%;
+}
+#qna .canvas::after{
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
 .qBox{
   background-color: white;
   text-align: center;
