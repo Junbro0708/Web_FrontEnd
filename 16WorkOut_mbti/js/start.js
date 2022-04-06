@@ -30,7 +30,6 @@ function goResult(){
       qnaEl.style.display = "none";
       resultEl.style.display = "block";
     }, 450)
-    let qIdx = 0;
     goNext(qIdx);
   }, 450)
   setResult();
@@ -40,7 +39,7 @@ function addAnswerBtn(answerText, qIdx, index){
   let a = document.querySelector('.answerBox');
   let answer = document.createElement('button');
   answer.classList.add('answerList');
-  answer.classList.add('my-3');
+  answer.classList.add('my-4');
   answer.classList.add('py-3');
   answer.classList.add('mx-auto');
   answer.classList.add('fade-in');

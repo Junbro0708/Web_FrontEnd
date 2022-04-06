@@ -1,7 +1,7 @@
 /* main화면에 영향을 주는 스타일 */
 #main{
   background-color: #FFF;
-  width: 90%;
+  /* width: 90%; */
   text-align: center;
   border-radius: 20px;
 }
