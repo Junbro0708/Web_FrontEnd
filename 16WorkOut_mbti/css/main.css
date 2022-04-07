@@ -1,9 +1,9 @@
 /* main화면에 영향을 주는 스타일 */
 #main{
   background-color: #FFF;
-  /* width: 90%; */
   text-align: center;
   border-radius: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
 }
 #main .canvas{
   width: 95%;

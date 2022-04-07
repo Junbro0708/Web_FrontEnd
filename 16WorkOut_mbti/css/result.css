@@ -1,9 +1,9 @@
 #result{
   display: none;
   background-color: #FFF;
-  width: 90%;
   text-align: center;
   border-radius: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
 }
 #result .canvas{
   width: 95%;
@@ -15,20 +15,20 @@
   padding-bottom: 100%;
 }
 #result .title{
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
-  padding-bottom: 5vh;
+  padding-bottom: 10%;
 }
 #result .text-group .result-name{
   font-size: 16px;
   font-weight: 700;
-  padding: 20px 10px 10px 0;
+  padding: 15% 5% 10% 5%;
   line-height: 1.4;
 }
 #result .text-group .result-description{
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
-  padding: 10px;
+  padding: 0 5% 10% 5%;
   line-height: 1.4;
 }
 #result .result-btn{

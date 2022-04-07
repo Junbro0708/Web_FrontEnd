@@ -2,7 +2,7 @@
   display: none;
 }
 #qna .canvas{
-  width: 80%;
+  width: 95%;
   background-color: #FFF;
   margin: 5% 0;
 }
@@ -11,33 +11,37 @@
   display: block;
   padding-bottom: 100%;
 }
-.qBox{
+#qna .qBox{
   background-color: white;
   text-align: center;
   border-radius: 20px;
   font-size: 20px;
-  width: 80%;
+  width: 95%;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
 }
-.answerList{
+#qna .answerList{
   background-color: white;
-  border-radius: 20px;
+  border-radius: 15px;
   display: block;
-  width: 80%;
+  width: 95%;
   border: 0px;
   transition: .3s;
   font-size: 16px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
 }
-.answerList:hover, .answerList:focus{
+#qna .answerList:hover, .answerList:focus{
   background-color: #333;
   color: white;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
 }
-.status{
-  width: 80%;
+#qna .status{
+  width: 95%;
   height: 25px;
   background-color: white;
   border-radius: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
 }
-.status-bar{
+#qna .status-bar{
   height: 100%;
   background-color: #333;
   border-radius: 25px;

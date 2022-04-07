@@ -27,6 +27,7 @@ function goResult(){
     resultEl.style.animation = "fadein 1s";
     resultEl.style.WebkitAnimation = "fadein 1s";
     setTimeout(() => {
+      qnaEl.style.opacity = "0";
       qnaEl.style.display = "none";
       resultEl.style.display = "block";
     }, 450)
