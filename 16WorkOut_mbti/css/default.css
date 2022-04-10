@@ -8,7 +8,6 @@ a{
 body{
   background-color: whitesmoke;
 }
-
 @keyframes fadein{
   from {opacity: 0;}
   to {opacity: 1;}
@@ -25,6 +24,9 @@ body{
 @-webkit-keyframes fadeout{
   from {opacity: 1;}
   to {opacity: 0;}
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
 .fade-in{

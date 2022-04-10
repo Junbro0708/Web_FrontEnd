@@ -31,13 +31,62 @@
   padding: 0 5% 10% 5%;
   line-height: 1.4;
 }
-#result .result-btn{
-  display: block;
-  width: 30%;
-  padding: 8px;
+
+#result .img-group{
+  width: 95%;
+  height: 10vh;
+  border-radius: 5px;
+  margin: 2vh auto;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#result .img-group .statics{
+  width: 45%;
+  height: 80%;
+  background-color: orange;
+}
+#result .img-group .compatibility{
+  width: 45%;
+  height: 80%;
+  background-color: orange;
+}
+
+#result .btn-group{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#result .btn-group .share-btn{
+  width: 45%;
+  padding: 3%;
   border: 1px solid #333;
   border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  transition: .4s;
+  margin: 2vh auto;
+}
+#result .share-btn:hover{
+  background-color: #333;
+  color: #FFF;
+}
+#result .btn-group .share-btn a{
   color: #333;
+}
+#result .btn-group .share-btn a:hover{
+  display: block;
+  height: 100%;
+  color: #FFF;
+}
+
+#result .btn-group .result-btn{
+  width: 45%;
+  padding: 3%;
+  border: 1px solid #333;
+  border-radius: 5px;
   font-size: 15px;
   font-weight: 700;
   text-align: center;
@@ -47,4 +96,31 @@
 #result .result-btn:hover{
   background-color: #333;
   color: #FFF;
+}
+#result .btn-group .result-btn a{
+  color: #333;
+}
+
+#result .btn-group .main-btn{
+  width: 95%;
+  padding: 3%;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  transition: .4s;
+  margin: auto;
+  background-color: #333;
+}
+#result .main-btn:hover{
+  background-color: #FFF;
+}
+#result .btn-group .main-btn a{
+  display: block;
+  height: 100%;
+  color: #FFF;
+}
+#result .btn-group .main-btn a:hover{
+  color: #333;
 }
