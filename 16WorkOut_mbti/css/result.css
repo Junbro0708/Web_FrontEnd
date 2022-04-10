@@ -34,8 +34,8 @@
 
 #result .img-group{
   width: 95%;
-  height: 10vh;
-  border-radius: 5px;
+  height: 15vh;
+  border-radius: 20px;
   margin: 2vh auto;
   background-color: #333;
   display: flex;
@@ -43,14 +43,22 @@
   align-items: center;
 }
 #result .img-group .statics{
-  width: 45%;
+  width: 42%;
   height: 80%;
-  background-color: orange;
+  background-color: #FFF;
+  margin-right: 5%;
+  border-radius: 15px;
 }
 #result .img-group .compatibility{
-  width: 45%;
+  width: 42%;
   height: 80%;
-  background-color: orange;
+  background-color: #FFF;
+  border-radius: 15px;
+}
+#result .img-group .text{
+  display: block;
+  padding: 15px;
+  font-size: 14px;
 }
 
 #result .btn-group{
