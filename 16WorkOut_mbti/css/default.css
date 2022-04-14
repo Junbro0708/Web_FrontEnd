@@ -8,6 +8,17 @@ a{
 body{
   background-color: whitesmoke;
 }
+.footer{
+  text-align: center;
+  color: #777;
+  font-weight: 700;
+}
+.footer p>h6{
+  font-size: 8px;
+}
+.footer .n:nth-child(2){
+  color: aqua;
+}
 @keyframes fadein{
   from {opacity: 0;}
   to {opacity: 1;}
