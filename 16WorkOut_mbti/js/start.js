@@ -28,10 +28,9 @@ function goResult(){
     resultEl.style.WebkitAnimation = "fadein 1s";
     setTimeout(() => {
       qnaEl.style.display = "none";
-      // qnaEl.style.visibility = "hidden";
       resultEl.style.display = "block";
     }, 450)
-    goNext(qIdx);
+    // goNext(qIdx);
   }, 450)
   setResult();
 }

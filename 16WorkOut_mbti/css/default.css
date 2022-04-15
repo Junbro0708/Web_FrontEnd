@@ -10,14 +10,20 @@ body{
 }
 .footer{
   text-align: center;
-  color: #777;
+  color: #cecfd0;
   font-weight: 700;
+  padding: 5%;
 }
-.footer p>h6{
-  font-size: 8px;
+.footer p{
+  font-size: 0.9em;
+  margin-bottom: 2%;
 }
-.footer .n:nth-child(2){
-  color: aqua;
+.footer p:nth-child(1){
+  font-size: 0.83em;
+  margin-bottom: 0.1%;
+}
+.footer p:nth-child(2){
+  font-size: 0.6em;
 }
 @keyframes fadein{
   from {opacity: 0;}
