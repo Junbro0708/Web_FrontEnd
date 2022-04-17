@@ -35,9 +35,9 @@
 #result .img-group{
   width: 95%;
   height: 15vh;
-  border-radius: 20px;
   margin: 2vh auto;
-  background-color: #333;
+  background-color: whitesmoke;
+  border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,14 +46,14 @@
   width: 42%;
   height: 80%;
   background-color: #FFF;
-  margin-right: 5%;
-  border-radius: 15px;
+  margin-right: 10%;
+  border-radius: 100px;
 }
 #result .img-group .compatibility{
   width: 42%;
   height: 80%;
   background-color: #FFF;
-  border-radius: 15px;
+  border-radius: 100px;
 }
 #result .img-group .text{
   display: block;
@@ -75,7 +75,8 @@
   font-weight: 700;
   text-align: center;
   transition: .4s;
-  margin: 2vh auto;
+  margin: 2vh auto 3vh;
+  cursor: pointer;
 }
 #result .share-btn:hover{
   background-color: #333;
@@ -84,7 +85,7 @@
 #result .btn-group .share-btn a{
   color: #333;
 }
-#result .btn-group .share-btn a:hover{
+#result .btn-group .share-btn:hover a{
   display: block;
   height: 100%;
   color: #FFF;
@@ -99,7 +100,8 @@
   font-weight: 700;
   text-align: center;
   transition: .4s;
-  margin: 2vh auto;
+  margin: 2vh auto 3vh;
+  cursor: pointer;
 }
 #result .result-btn:hover{
   background-color: #333;
@@ -107,6 +109,11 @@
 }
 #result .btn-group .result-btn a{
   color: #333;
+}
+#result .btn-group .result-btn:hover a{
+  display: block;
+  height: 100%;
+  color: #FFF;
 }
 
 #result .btn-group .main-btn{
@@ -120,15 +127,15 @@
   transition: .4s;
   margin: auto;
   background-color: #333;
+  cursor: pointer;
 }
 #result .main-btn:hover{
   background-color: #FFF;
 }
 #result .btn-group .main-btn a{
-  display: block;
   height: 100%;
   color: #FFF;
 }
-#result .btn-group .main-btn a:hover{
+#result .btn-group .main-btn:hover a{
   color: #333;
 }
