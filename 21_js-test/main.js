@@ -53,13 +53,32 @@ import abc from './getRandom'
 
 // ---------------------------------
 
-const a = 1 < 2
+// const a = 1 < 2
 
-if(a) {
-  console.log('참')
-}else{
-  console.log('거짓')
+// if(a) {
+//   console.log('참')
+// }else{
+//   console.log('거짓')
+// }
+
+// console.log(a ? true : false)
+// console.log(abc())
+
+// ---------------------------------
+
+const a = abc()
+
+switch (a) {
+  case 0:
+    console.log('a is 0')
+    break
+  case 2:
+    console.log('a is 2')
+    break
+  case 4:
+    console.log('a is 4')
+    break
+  default:
+    console.log('rest...')
+    break
 }
-
-console.log(a ? true : false)
-console.log(abc())
