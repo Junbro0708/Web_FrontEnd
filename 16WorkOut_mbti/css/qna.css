@@ -46,3 +46,8 @@
   background-color: #333;
   border-radius: 25px;
 }
+#qna .current{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}

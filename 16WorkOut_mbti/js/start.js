@@ -2,6 +2,7 @@ const mainEl = document.querySelector("#main");
 const qnaEl = document.querySelector("#qna");
 const resultEl = document.querySelector("#result");
 const statusFadeEl = document.querySelector('.status');
+const currentEl = document.querySelector('.current');
 const endPoint = qnaList.length;
 const select = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
@@ -80,6 +81,7 @@ function goNext(qIdx){
     addAnswerBtn(qnaList[qIdx].a[i].answer, qIdx, i);
   }
   const statusEl = document.querySelector('.status-bar');
+  currentEl.innerHTML = (qIdx + 1) + " / 12";
   statusEl.style.width = (100 / endPoint) * (qIdx + 1) + '%';
 }
 
