@@ -1,5 +1,5 @@
 // import GetType from './GetType'
-import abc from './getRandom'
+// import abc from './getRandom'
 
 // console.log(typeof "Hello World!")
 // console.log(typeof 123)
@@ -66,29 +66,62 @@ import abc from './getRandom'
 
 // ---------------------------------
 
-const a = abc()
+// const a = abc()
 
-switch (a) {
-  case 0:
-    console.log('a is 0')
-    break
-  case 2:
-    console.log('a is 2')
-    break
-  case 4:
-    console.log('a is 4')
-    break
-  default:
-    console.log('rest...')
-    break
-}
+// switch (a) {
+//   case 0:
+//     console.log('a is 0')
+//     break
+//   case 2:
+//     console.log('a is 2')
+//     break
+//   case 4:
+//     console.log('a is 4')
+//     break
+//   default:
+//     console.log('rest...')
+//     break
+// }
 
-if(a === 0){
-  console.log('a is 0')
-}else if(a === 2){
-  console.log('a is 2')
-}else if(a === 4){
-  console.log('a is 4')
-}else{
-  console.log('rest...')
-}
+// if(a === 0){
+//   console.log('a is 0')
+// }else if(a === 2){
+//   console.log('a is 2')
+// }else if(a === 4){
+//   console.log('a is 4')
+// }else{
+//   console.log('rest...')
+// }
+
+// ---------------------------------
+
+// const ulEl = document.querySelector('ul')
+
+// for(let i = 0; i < 10; ++i){
+//   const li = document.createElement('li')
+//   li.textContent = `list-${i + 1}`
+//   if((i + 1) % 2 === 0){
+//     li.addEventListener('click', function(){
+//       console.log(li.textContent)
+//     })
+//   }
+//   ulEl.appendChild(li)
+// }
+
+// ---------------------------------
+
+// function scope(){
+//   if(true){
+//     const a = 123
+//     console.log(a)
+//   }
+// }
+// scope()
+
+// ---------------------------------
+
+const a = 1
+const b = '1'
+
+console.log(a === b)
+console.log(a == b)
