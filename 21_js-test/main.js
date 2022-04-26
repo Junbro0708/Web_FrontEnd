@@ -120,8 +120,39 @@
 
 // ---------------------------------
 
-const a = 1
-const b = '1'
+// const a = 1
+// const b = '1'
 
-console.log(a === b)
-console.log(a == b)
+// console.log(a === b)
+// console.log(a == b)
+
+// ---------------------------------
+
+function sum1(){
+  console.log(arguments)
+  return arguments[0] + arguments[1]
+}
+
+const sum = function (x, y){
+  return x + y
+}
+
+a = sum1(1, 3)
+console.log(a)
+console.log(sum(4, 12))
+
+const timer = setInterval(() => {
+  console.log('Junbro')
+}, 1000)
+
+const h1El = document.querySelector('h1')
+h1El.addEventListener('click', () => {
+  clearInterval(timer);
+})
+
+function timeout() {
+  setTimeout(() => {
+    console.log('Junbroo')
+  }, 2000)
+}
+timeout()
