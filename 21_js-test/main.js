@@ -128,31 +128,57 @@
 
 // ---------------------------------
 
-function sum1(){
-  console.log(arguments)
-  return arguments[0] + arguments[1]
+// function sum1(){
+//   console.log(arguments)
+//   return arguments[0] + arguments[1]
+// }
+
+// const sum = function (x, y){
+//   return x + y
+// }
+
+// a = sum1(1, 3)
+// console.log(a)
+// console.log(sum(4, 12))
+
+// const timer = setInterval(() => {
+//   console.log('Junbro')
+// }, 1000)
+
+// const h1El = document.querySelector('h1')
+// h1El.addEventListener('click', () => {
+//   clearInterval(timer);
+// })
+
+// function timeout() {
+//   setTimeout(() => {
+//     console.log('Junbroo')
+//   }, 2000)
+// }
+// timeout()
+
+// ---------------------------------
+
+// function user(first, last){
+//   this.firstName = first
+//   this.lastName = last
+// }
+// user.prototype.getFullName = function(){
+//   return `${this.firstName} ${this.lastName}`
+// }
+
+class user{
+  constructor(first, last){
+    this.firstName = first
+    this.lastName = last
+  }
+  getFullName(){
+    return `${this.firstName} ${this.lastName}`
+  }
 }
-
-const sum = function (x, y){
-  return x + y
-}
-
-a = sum1(1, 3)
-console.log(a)
-console.log(sum(4, 12))
-
-const timer = setInterval(() => {
-  console.log('Junbro')
-}, 1000)
-
-const h1El = document.querySelector('h1')
-h1El.addEventListener('click', () => {
-  clearInterval(timer);
-})
-
-function timeout() {
-  setTimeout(() => {
-    console.log('Junbroo')
-  }, 2000)
-}
-timeout()
+const junbro = new user('Junbro', 'Park')
+const amy = new user('Amy', 'Park')
+const neo = new user('Neo', 'Park')
+console.log(junbro.getFullName()) 
+console.log(amy) 
+console.log(neo) 
