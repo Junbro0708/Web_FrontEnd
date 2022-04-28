@@ -167,18 +167,37 @@
 //   return `${this.firstName} ${this.lastName}`
 // }
 
-class user{
-  constructor(first, last){
-    this.firstName = first
-    this.lastName = last
-  }
-  getFullName(){
-    return `${this.firstName} ${this.lastName}`
-  }
-}
-const junbro = new user('Junbro', 'Park')
-const amy = new user('Amy', 'Park')
-const neo = new user('Neo', 'Park')
-console.log(junbro.getFullName()) 
-console.log(amy) 
-console.log(neo) 
+// class user{
+//   constructor(first, last){
+//     this.firstName = first
+//     this.lastName = last
+//   }
+//   getFullName(){
+//     return `${this.firstName} ${this.lastName}`
+//   }
+// }
+// const junbro = new user('Junbro', 'Park')
+// const amy = new user('Amy', 'Park')
+// const neo = new user('Neo', 'Park')
+// console.log(junbro.getFullName()) 
+// console.log(amy) 
+// console.log(neo) 
+
+//--------------------
+
+const result = 'Hello World'.indexOf('Wo')
+console.log(result)
+
+const str = '0123'
+console.log(str.length)
+console.log(str.indexOf('2'))
+console.log(str.slice(0, 2))
+
+const pi = 3.14159265358979
+console.log(pi)
+
+const str1 = pi.toFixed(2)
+console.log(str1)
+console.log(typeof str1)
+console.log(typeof parseInt(str1))
+console.log(typeof parseFloat(str1))
