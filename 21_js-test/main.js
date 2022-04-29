@@ -196,8 +196,8 @@ console.log(str.slice(0, 2))
 const pi = 3.14159265358979
 console.log(pi)
 
-const str1 = pi.toFixed(2)
+const str1 = pi.toFixed(2) //
 console.log(str1)
 console.log(typeof str1)
 console.log(typeof parseInt(str1))
-console.log(typeof parseFloat(str1))
+console.log(typeof parseFloat(str1)) 
