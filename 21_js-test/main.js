@@ -185,19 +185,27 @@
 
 //--------------------
 
-const result = 'Hello World'.indexOf('Wo')
-console.log(result)
+// const result = 'Hello World'.indexOf('Wo')
+// console.log(result)
 
-const str = '0123'
-console.log(str.length)
-console.log(str.indexOf('2'))
-console.log(str.slice(0, 2))
+// const str = '0123'
+// console.log(str.length)
+// console.log(str.indexOf('2'))
+// console.log(str.slice(0, 2))
 
-const pi = 3.14159265358979
-console.log(pi)
+// const pi = 3.14159265358979
+// console.log(pi)
 
-const str1 = pi.toFixed(2) //
-console.log(str1)
-console.log(typeof str1)
-console.log(typeof parseInt(str1))
-console.log(typeof parseFloat(str1)) 
+// const str1 = pi.toFixed(2) //
+// console.log(str1)
+// console.log(typeof str1)
+// console.log(typeof parseInt(str1))
+// console.log(typeof parseFloat(str1)) 
+
+//--------------------
+
+const numbers = [1, 2, 3, 4]
+const fruits = ['Apple', 'Banana', 'Cherry']
+
+console.log(numbers)
+console.log(fruits[2])
