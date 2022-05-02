@@ -204,8 +204,25 @@
 
 //--------------------
 
-const numbers = [1, 2, 3, 4]
-const fruits = ['Apple', 'Banana', 'Cherry']
+// const numbers = [1, 2, 3, 4]
+// const fruits = ['Apple', 'Banana', 'Cherry']
 
-console.log(numbers)
-console.log(fruits[2])
+// console.log(numbers)
+// console.log(fruits[2])
+
+//--------------------
+
+const userAge = {
+  name: 'JunBro',
+  age: 26
+}
+
+const userEmail = {
+  name: 'JunBro',
+  email: 'aktm708@gmail.com'
+}
+
+const target = Object.assign(userAge, userEmail)
+console.log(target)
+console.log(userAge)
+console.log(userEmail)
