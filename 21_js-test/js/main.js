@@ -212,17 +212,55 @@
 
 //--------------------
 
-const userAge = {
-  name: 'JunBro',
-  age: 26
-}
+// const userAge = {
+//   name: 'JunBro',
+//   age: 26
+// }
 
-const userEmail = {
-  name: 'JunBro',
-  email: 'aktm708@gmail.com'
-}
+// const userEmail = {
+//   name: 'JunBro',
+//   email: 'aktm708@gmail.com'
+// }
 
-const target = Object.assign(userAge, userEmail)
-console.log(target)
-console.log(userAge)
-console.log(userEmail)
+// const target = Object.assign(userAge, userEmail)
+// console.log(target)
+// console.log(userAge)
+// console.log(userEmail)
+
+//--------------------
+
+import _ from 'lodash'
+import { user } from './getRandom'
+
+const userA = [
+  { userId: '1', name: 'Junbro'},
+  { userId: '2', name: 'Heropy'}
+]
+
+const userB = [
+  { userId: '1', name: 'Junbro'},
+  { userId: '3', name: 'Amy'}
+]
+
+const userC = userA.concat(userB)
+console.log('concat', userC)
+console.log('uniq', _.uniqBy(userC, 'userId'))
+
+const userD = _.unionBy(userA, userB, 'userId')
+console.log('union', userD)
+
+const users = [
+  { userId: '1', name: 'Junbro'},
+  { userId: '2', name: 'Yong'},
+  { userId: '3', name: 'Park'},
+  { userId: '4', name: 'Amy'},
+  { userId: '5 ', name: 'Kim'},
+]
+
+const foundUser = _.find(users, {name: 'Amy'})
+const foundUserIndex = _.findIndex(users, {name: 'Amy'})
+console.log(foundUser)
+console.log(foundUserIndex)
+
+_.remove(users, {name: 'Amy'})
+console.log(users)
