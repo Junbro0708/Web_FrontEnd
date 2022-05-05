@@ -264,3 +264,7 @@ console.log(foundUserIndex)
 
 _.remove(users, {name: 'Amy'})
 console.log(users)
+
+import myData from '../myData.json'
+
+console.log(myData)
