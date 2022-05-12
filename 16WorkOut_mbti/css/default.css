@@ -8,6 +8,37 @@ a{
 body{
   background-color: whitesmoke;
 }
+
+.modal-body .input-group .copy-link-btn{
+  cursor: pointer;
+}
+.modal-body .share-btn-group{
+  display: flex;
+  justify-content: center;
+}
+.modal-body .share-btn-group .share-btn{
+  width: 60px;
+  height: 60px;
+  background-color: aqua;
+  margin: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.modal-body .share-btn-group .share-btn.kakao-btn{
+  background-image: url("https://play-lh.googleusercontent.com/8_0SDfkFXAFm12A7XEqkyChCdGC055J6fC8JR7qynNuO3qNOczIoNHo4U4lad8xYMJOL");
+  background-position: center;
+  background-size: cover;
+}
+.modal-body .share-btn-group .share-btn.facebook-btn{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px-Facebook_f_logo_%282019%29.svg.png");
+  background-position: center;
+  background-size: cover;
+}
+.modal-body .share-btn-group .share-btn.twitter-btn{
+  background-image: url("https://www.pngkey.com/png/full/2-27646_twitter-logo-png-transparent-background-logo-twitter-png.png");
+  background-position: center;
+  background-size: cover;
+}
 .footer{
   text-align: center;
   color: #cecfd0;
