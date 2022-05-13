@@ -6,6 +6,16 @@ const currentEl = document.querySelector('.current');
 const endPoint = qnaList.length;
 const select = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
+const link = document.location.href;
+const inputLink = document.getElementById("current-link")
+inputLink.setAttribute("value", link)
+
+const copyBtn = document.querySelector(".copy-link-btn")
+copyBtn.addEventListener("click", function(){
+  inputLink.select();
+  document.execCommand("Copy");
+})
+
 function calResult() {
   console.log(select);
   let result = select.indexOf(Math.max(...select));

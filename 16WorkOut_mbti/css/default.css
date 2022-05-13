@@ -11,15 +11,28 @@ body{
 
 .modal-body .input-group .copy-link-btn{
   cursor: pointer;
+  background-color: #333;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 10px 20px;
+  margin-left: 15px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  transition: .4s;
+}
+.modal-body .input-group .copy-link-btn:hover{
+  background-color: #FFF;
+  color: #333;
 }
 .modal-body .share-btn-group{
   display: flex;
   justify-content: center;
 }
 .modal-body .share-btn-group .share-btn{
-  width: 60px;
-  height: 60px;
-  background-color: aqua;
+  width: 50px;
+  height: 50px;
+  background-color: white;
   margin: 10px 15px;
   border-radius: 50%;
   cursor: pointer;
@@ -35,7 +48,7 @@ body{
   background-size: cover;
 }
 .modal-body .share-btn-group .share-btn.twitter-btn{
-  background-image: url("https://www.pngkey.com/png/full/2-27646_twitter-logo-png-transparent-background-logo-twitter-png.png");
+  background-image: url("https://seeklogo.com/images/T/twitter-icon-circle-blue-logo-0902F48837-seeklogo.com.png");
   background-position: center;
   background-size: cover;
 }
