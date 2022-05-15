@@ -11,8 +11,8 @@ body{
 
 .modal-body .input-group .copy-link-btn{
   cursor: pointer;
-  background-color: #333;
-  color: white;
+  background-color: #FFF;
+  color: #333;
   font-weight: 700;
   font-size: 15px;
   padding: 10px 20px;
@@ -22,8 +22,8 @@ body{
   transition: .4s;
 }
 .modal-body .input-group .copy-link-btn:hover{
-  background-color: #FFF;
-  color: #333;
+  background-color: #333;
+  color: #FFF;
 }
 .modal-body .share-btn-group{
   display: flex;
