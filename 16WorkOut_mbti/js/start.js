@@ -13,15 +13,15 @@ inputLink.setAttribute("value", link)
 const copyBtn = document.querySelector(".copy-link-btn")
 copyBtn.addEventListener("click", function(){
   inputLink.select();
-  document.execCommand("Copy");
+  document.execCommand("Copy"); // 이건 쓰지 말라는건감?
 })
 
-if(document.location.href == "http://127.0.0.1:5500/"){
+if(document.location.href == "http://127.0.0.1:5500/"){ // 최상위 페이지 주소
   resultEl.style.display = "none";
 }
 
 function movePage(pageNum){
-  location.href = (document.location.href+`${pageNum}.html`)
+  location.href = (document.location.href + "result/" + pageNum + ".html")
 }
 
 function calResult() {
@@ -33,11 +33,11 @@ function calResult() {
 function setResult(){
   let point = calResult();
   movePage(point);
-  const resultName = document.querySelector('.result-name');
-  resultName.innerHTML = infoList[point].name;
+  // const resultName = document.querySelector('.result-name');
+  // resultName.innerHTML = infoList[point].name;
 
-  const resultDesc = document.querySelector('.result-description');
-  resultDesc.innerHTML = infoList[point].description;
+  // const resultDesc = document.querySelector('.result-description');
+  // resultDesc.innerHTML = infoList[point].description;
 }
 
 function goResult(){
