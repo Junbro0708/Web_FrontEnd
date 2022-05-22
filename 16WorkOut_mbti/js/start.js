@@ -16,6 +16,14 @@ copyBtn.addEventListener("click", function(){
   document.execCommand("Copy");
 })
 
+if(document.location.href == "http://127.0.0.1:5500/"){
+  resultEl.style.display = "none";
+}
+
+function movePage(pageNum){
+  location.href = (document.location.href+`${pageNum}.html`)
+}
+
 function calResult() {
   console.log(select);
   let result = select.indexOf(Math.max(...select));
@@ -24,6 +32,7 @@ function calResult() {
 
 function setResult(){
   let point = calResult();
+  movePage(point);
   const resultName = document.querySelector('.result-name');
   resultName.innerHTML = infoList[point].name;
 
@@ -39,7 +48,7 @@ function goResult(){
     resultEl.style.WebkitAnimation = "fadein 1s";
     setTimeout(() => {
       qnaEl.style.display = "none";
-      resultEl.style.display = "block";
+      // resultEl.style.display = "block";
     }, 450)
     // goNext(qIdx);
   }, 450)
