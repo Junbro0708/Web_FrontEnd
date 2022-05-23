@@ -13,9 +13,9 @@ inputLink.setAttribute("value", link)
 const copyBtn = document.querySelector(".copy-link-btn")
 copyBtn.addEventListener("click", function(){
   inputLink.select();
-  document.execCommand("Copy"); // 이건 쓰지 말라는건감?
+  document.execCommand("Copy"); // 웹 표준에서 권장하지 않는 문법
 })
-
+// console.log(window.location.origin);
 if(document.location.href == "http://127.0.0.1:5500/"){ // 최상위 페이지 주소
   resultEl.style.display = "none";
 }
