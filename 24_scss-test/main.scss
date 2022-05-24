@@ -1,7 +1,18 @@
-$color: royalblue;
+@import "./sub";
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .container{
-  h1{
-    color: $color;
+  @include center;
+  .item{
+    @include center;
   }
+}
+
+.box{
+  @include center;
 }
