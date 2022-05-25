@@ -12,11 +12,18 @@
 <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 <script>
-  const rootEl = document.getElementById("root")
-  const spanEl = React.createElement(
-  "span",
-  {},
-  'Hello World!')
-  ReactDOM.render(spanEl, rootEl)
+  const rootEl = document.getElementById("root");
+  const h3El = React.createElement("h3", {
+    id: "title",
+    onMouseEnter: () => console.log('mouse enter')
+  }, 'Hello World!');
+  const buttonEl = React.createElement("button", {
+    onClick: () => console.log('im clicked'),
+    style: {
+      backgroundColor: "tomato"
+    }
+  }, "Click me");
+  const divEl = React.createElement("div", null, [h3El, buttonEl]);
+  ReactDOM.render(divEl, rootEl);
 </script>
 </html>
