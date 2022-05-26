@@ -18,7 +18,7 @@
   //   id: "title",
   //   onMouseEnter: () => console.log('mouse enter')
   // }, 'Hello World!');
-  const h3El = (
+  const H3El = () => (
     <h3 id="title" onMouseEnter={() => console.log("mouse entered")}>
       Hello World!
     </h3>
@@ -30,7 +30,7 @@
   //     backgroundColor: "tomato"
   //   }
   // }, "Click me");
-  const buttonEl = (
+  const ButtonEl = () => (
     <button style={{
       backgroundColor: "tomato"
     }} 
@@ -39,7 +39,13 @@
       Click me!
     </button>
   );
-  const divEl = React.createElement("div", null, [h3El, buttonEl]);
-  ReactDOM.render(divEl, rootEl);
+  // const divEl = React.createElement("div", null, [h3El, buttonEl]);
+  const DivEl = () => (
+    <div>
+      <H3El/>
+      <ButtonEl/>
+    </div>
+  );
+  ReactDOM.render(<DivEl/>, rootEl);
 </script>
 </html>
