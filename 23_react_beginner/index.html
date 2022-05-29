@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
   <div id="root"></div>
 </body>
@@ -14,20 +16,18 @@
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <script type="text/babel">
   const rootEl = document.getElementById("root");
-  let counter = 0;
-  function countUp(){
-    counter = counter + 1;
-    render();
-  }
-  function render(){
-    ReactDOM.render(<DivEl/>, rootEl);
-  }
-  const DivEl = () => (
+  function DivEl(){
+    const [counter, setCounter] = React.useState(0);
+    const onClick = () => {
+      setCounter(counter + 1);
+    }
+    return (
   <div>
     <h3>Total clicks : {counter}</h3>
-    <button onClick={countUp}>Click me!</button>
+    <button onClick={onClick}>Click me!</button>
   </div>
   );
-  render();
+  }
+ ReactDOM.render(<DivEl />, rootEl);
 </script>
 </html>
