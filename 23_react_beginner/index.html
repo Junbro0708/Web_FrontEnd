@@ -15,8 +15,7 @@
 <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <script type="text/babel">
-  const rootEl = document.getElementById("root");
-  function App() {
+  function MinutesToHours() {
     const [amount, setAmount] = React.useState(0);
     const [isInverted, setInvert] = React.useState(false);
     const onChange = (event) => {
@@ -30,7 +29,6 @@
     }
     return (
     <div>
-      <h1 className="hi">Super Converter</h1>
       <div><label htmlFor="minutes">Minutes</label>
       <input 
       value={isInverted ? amount * 60 : amount} 
@@ -57,6 +55,21 @@
   </div>
   );
   }
+  function KmToMiles() {
+    return (
+      <h3>Km 2 Miles</h3>
+    )
+  };
+  function App() {
+    return (
+    <div>
+      <h1 className="hi">Super Converter</h1>
+      <MinutesToHours/>
+      <KmToMiles/>
+    </div>
+  );
+  }
+  const rootEl = document.getElementById("root");
   ReactDOM.render(<App/>, rootEl);
 </script>
 
