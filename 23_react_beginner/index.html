@@ -30,7 +30,8 @@
     return (
     <div>
       <h3>Minutes 2 Hours</h3>
-      <div><label htmlFor="minutes">Minutes</label>
+      <div>
+      <label htmlFor="minutes">Minutes</label>
       <input 
       value={isInverted ? amount * 60 : amount} 
       id="minutes" 
@@ -58,7 +59,30 @@
   }
   function KmToMiles() {
     return (
-      <h3>Km 2 Miles</h3>
+      <div>
+        <h3>Km 2 Miles</h3>
+        <div>
+        <label htmlFor="kilometer">Kilometer</label>
+        <input 
+        value="0"
+        id="kilometer"
+        placeholder="Kilometer"
+        typr="number"
+        disabled="false"
+        />
+        </div>
+        <div>
+        <label htmlFor="mile">Miles</label>
+        <input 
+        value="0"
+        id="mile"
+        placeholder="mile"
+        typr="number"
+        disabled="false"
+        />
+        </div>
+      </div>
+      
     )
   };
   function App() {
