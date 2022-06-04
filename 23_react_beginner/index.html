@@ -16,13 +16,13 @@
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <script type="text/babel">
   function MinutesToHours() {
-    const [amount, setAmount] = React.useState(0);
+    const [amount, setAmount] = React.useState();
     const [isInverted, setInvert] = React.useState(false);
     const onChange = (event) => {
       console.log(event)
       setAmount(event.target.value);
     };
-    const reset = () => setAmount(0);
+    const reset = () => setAmount();
     const onInvert = () => {
       reset();
       setInvert((current) => !current);
