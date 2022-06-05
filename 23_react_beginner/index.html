@@ -22,11 +22,14 @@
       console.log(event)
       setAmount(event.target.value);
     };
-    const reset = () => setAmount();
+    const reset = () => setAmount(0);
     const onInvert = () => {
       reset();
       setInvert((current) => !current);
     }
+    const inputClick = (event) => {
+      event.target.select();
+    };
     return (
     <div>
       <h3>Minutes 2 Hours</h3>
@@ -39,6 +42,7 @@
       type="number"
       disabled={isInverted}
       onChange={onChange}
+      onClick={inputClick}
       />
     </div>
     <div>
@@ -50,6 +54,7 @@
       type="number"
       disabled={!isInverted}
       onChange={onChange}
+      onClick={inputClick}
       />
     </div>
     <button onClick={reset}>Reset</button>
@@ -67,10 +72,10 @@
     const onInvert = () => {
       reset();
       setInvert(current => !current);
-    }
-    const inputClick = () => {
-      this.select();
-    }
+    };
+    const inputClick = (event) => {
+      event.target.select();
+    };
     return (
       <div>
         <h3>Km 2 Miles</h3>
@@ -80,9 +85,10 @@
         value={isInverted ? amount * 1.609 : amount}
         id="kilometer"
         placeholder="Kilometer"
-        type="number"
+        type="text"
         disabled={isInverted}
         onChange={onChange}
+        onClick={inputClick}
         />
         </div>
         <div>
@@ -94,6 +100,7 @@
         type="number"
         disabled={!isInverted}
         onChange={onChange}
+        onClick={inputClick}
         />
         </div>
         <button onClick={reset}>Reset</button>
