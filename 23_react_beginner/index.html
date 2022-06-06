@@ -109,11 +109,20 @@
     );
   };
   function App() {
+    const [index, setIndex] = React.useState("0");
+    const onSelect = (event) => {
+      setIndex(event.target.value);
+    }
     return (
     <div>
       <h1 className="hi">Super Converter</h1>
-      <MinutesToHours/>
-      <KmToMiles/>
+      <select value={index} onChange={onSelect}>
+        <option value="0">MinutesToHours</option>
+        <option value="1">KmToMiles</option>
+      </select>
+      <hr/>
+      {index === "0" ? <MinutesToHours/> : null}
+      {index === "1" ? <KmToMiles/> : null}
     </div>
   );
   }
