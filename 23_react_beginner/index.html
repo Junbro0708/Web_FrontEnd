@@ -109,17 +109,30 @@
     );
   };
   function CmToInches(){
+    const [amount, setAmount] = React.useState(0);
+    const [isInverted, setInvert] = React.useState(false);
+    const onChange = (event) => {
+      setAmount(event.target.value);
+    };
+    const reset = () => setAmount(0);
+    const onInvert = () => {
+      reset();
+      setInvert(current => !current);
+    };
+    const inputClick = (event) => {
+      event.target.select();
+    };
     return(
       <div>
         <h3>Cm 2 Inches</h3>
         <div>
           <label htmlFor="centimeter">Centimeter</label>
           <input
-          value="0"
+          value={isInverted ? amount * 0.393 : amount}
           id="centimeter"
           placeholder="centimeter"
           type="number"
-          disabled={false}
+          disabled={isInverted}
           onChange={onChange}
           onClick={inputClick}
           />
@@ -127,17 +140,17 @@
         <div>
           <label htmlFor="inches">Inches</label>
           <input
-          value="0"
+          value={isInverted ? amount : amount / 2.54}
           id="inches"
           placeholder="inches"
           type="number"
-          disabled={false}
+          disabled={!isInverted}
           onChange={onChange}
           onClick={inputClick}
           />
         </div>
-        <button>Reset</button>
-        <button>Invert</button>
+        <button onClick={reset}>Reset</button>
+        <button onClick={onInvert}>{isInverted ? "Turn back" : "Invert"}</button>
       </div>
     );
   };
