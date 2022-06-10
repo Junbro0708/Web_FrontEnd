@@ -108,10 +108,36 @@
       </div>
     );
   };
-  function CmToInch(){
+  function CmToInches(){
     return(
       <div>
-      
+        <h3>Cm 2 Inches</h3>
+        <div>
+          <label htmlFor="centimeter">Centimeter</label>
+          <input
+          value="0"
+          id="centimeter"
+          placeholder="centimeter"
+          type="number"
+          disabled={false}
+          onChange={onChange}
+          onClick={inputClick}
+          />
+        </div>
+        <div>
+          <label htmlFor="inches">Inches</label>
+          <input
+          value="0"
+          id="inches"
+          placeholder="inches"
+          type="number"
+          disabled={false}
+          onChange={onChange}
+          onClick={inputClick}
+          />
+        </div>
+        <button>Reset</button>
+        <button>Invert</button>
       </div>
     );
   };
@@ -127,11 +153,13 @@
         <option value="-1">Choose the option</option>
         <option value="0">MinutesToHours</option>
         <option value="1">KmToMiles</option>
+        <option value="2">CmToInches</option>
       </select>
       <hr/>
       {index === "-1" ? "Choose the option you need" : null}
       {index === "0" ? <MinutesToHours/> : null}
       {index === "1" ? <KmToMiles/> : null}
+      {index === "2" ? <CmToInches/> : null}
     </div>
   );
   }
