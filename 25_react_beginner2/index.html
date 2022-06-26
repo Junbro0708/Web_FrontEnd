@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+    console.log(React);
+    console.log(ReactDOM);
+
+    // 클래스 컴포넌트
+    class ClassComponent extends React.Component{
+      render(){
+        return (
+          <div>Hello</div>
+        );
+      }
+    }
+
+    ReactDOM.render(<ClassComponent />, document.querySelector('#root'))
+
+    // 펑션 컴포넌트 (프롭스 활용할 때)
+    function FunctionComponent() {
+      return(
+        <div>Babo</div>
+      )
+    }
+    ReactDOM.render(<FunctionComponent/>, document.querySelector('#root'));
+
+    //콘스트 펑션 컴포넌트 (간단하게 쓸 때 좋음)
+    const FunctionArrowComponent = () => <div>Hing</div>
+    ReactDOM.render(<FunctionArrowComponent/>, document.querySelector('#root'));
+  </script>
+</body>
+</html>
