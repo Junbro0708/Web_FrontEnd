@@ -1,0 +1,14 @@
+.home{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.home > article{
+  border: 3px solid whitesmoke;
+  border-radius: 2rem;
+  width: 42rem;
+  height: 42rem;
+}
