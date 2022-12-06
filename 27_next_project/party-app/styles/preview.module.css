@@ -1,0 +1,14 @@
+.demo{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.demo > h1{
+  font-size: 2.5rem;
+}
+.demo > h2{
+  font-size: 1.5rem;
+}
+.demo > h3{
+  font-size: 1.0rem;
+}

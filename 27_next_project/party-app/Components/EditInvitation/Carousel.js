@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BsFillCaretRightFill, BsFillCaretLeftFill } from "react-icons/bs";
 
 import styles from "../../styles/carousel.module.css";
 
@@ -10,9 +11,7 @@ export const CarouselItem = ({children, width}) => {
   );
 };
 
-const Carousel = ({children}) => {
-  const [activeIdx, setActiveIdx] = useState(0);
-
+const Carousel = ({children, activeIdx, setActiveIdx}) => {
   const updateIdx = (newIdx) => {
     if(newIdx < 0) newIdx = 0;
     else if(newIdx >= React.Children.count(children)){
@@ -28,8 +27,8 @@ const Carousel = ({children}) => {
         })}
       </div>
       <div className={styles.indicators}>
-        <button onClick={()=>updateIdx(activeIdx-1)}>Prev</button>
-        <button onClick={()=>updateIdx(activeIdx+1)}>Next</button>
+        <button onClick={()=>updateIdx(activeIdx-1)}><BsFillCaretLeftFill/></button>
+        <button onClick={()=>updateIdx(activeIdx+1)}><BsFillCaretRightFill/></button>
       </div>
     </div>
   )
