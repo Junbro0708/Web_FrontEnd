@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "type": "color",
+    "data": [
+      "#aaffaa",
+      "#235124",
+      "#bbbbbb",
+      "#000000",
+      "#212554",
+      "#001562"
+    ]
+  },
+  {
+    "id": 1,
+    "type": "font-family",
+    "data": [
+      "'Courier New', Courier, monospace",
+      "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif",
+      "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
+      "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif",
+      "Arial, Helvetica, sans-serif",
+      "Verdana, Geneva, Tahoma, sans-serif"
+    ]
+  },
+  {
+    "id": 2,
+    "type": "font-size",
+    "data": [
+      11,
+      16,
+      18,
+      21,
+      27,
+      31
+    ]
+  }
+]

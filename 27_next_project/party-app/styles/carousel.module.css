@@ -9,16 +9,18 @@
 
 .carouselItem {
   display: inline-flex;
-  align-items: center;
+  text-align: center;
   justify-content: center;
   height: 200px;
   /* background-color: green; */
+  height: 100%;
   color: black;
 }
 
 .indicators {
   display: flex;
   justify-content: center;
+  /* margin-top: 5rem; */
 }
 
 .indicators > button {
