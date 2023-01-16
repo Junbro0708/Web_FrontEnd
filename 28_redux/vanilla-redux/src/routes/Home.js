@@ -1,5 +1,6 @@
 import { Fragment, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { addToDo, deleteToDo } from "../store";
 
 function Home(){
@@ -18,7 +19,7 @@ function Home(){
   }
   
   return(
-    <>
+    <Fragment>
       <h1>TO DO LIST</h1>
       <form onSubmit={onSubmit}>
         <input type="text" value={text} onChange={onChange}/>
@@ -26,10 +27,10 @@ function Home(){
       </form>
       <ul>
         {todo.map((val, idx)=>{
-          return <li key={idx}>{val.text} <button onClick={()=>dispatch(deleteToDo(val.id))}>X</button></li>
+          return <li key={idx}><Link to={`details/${val.id}`}>{val.text}</Link><button onClick={()=>dispatch(deleteToDo(val.id))}>X</button></li>
         })}
       </ul>
-    </>
+    </Fragment>
   )
 }
 
