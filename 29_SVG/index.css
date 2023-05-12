@@ -41,6 +41,9 @@ body{
   }
 }
 @keyframes shrinkHorizontal {
+  from{
+    transform: scaleX(1);
+  }
   to{
     transform: scaleX(0);
   }
@@ -76,6 +79,7 @@ body{
 @keyframes sucking {
   to{
     transform: translateY(-250px) scale(0);
+    opacity: 0;
   }
 }
 
@@ -139,7 +143,7 @@ body{
 }
 
 #UFO-beam{
-  animation: expandHorizontal 4s infinite;
+  animation: expandHorizontal 2s;
   transform-box: fill-box;
   transform-origin: center;
 }
