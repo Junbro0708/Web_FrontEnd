@@ -1,0 +1,1 @@
+export const USER_WISHLIST = 'USER_WISHLIST';

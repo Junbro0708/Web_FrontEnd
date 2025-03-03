@@ -1,0 +1,44 @@
+.header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.title {
+  font-size: 18px;
+}
+
+.editButton {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #3272ce;
+  cursor: pointer;
+}
+
+.deleteButton {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  max-width: 600px;
+  height: 50px;
+  z-index: 15;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.emptyLike {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+}
